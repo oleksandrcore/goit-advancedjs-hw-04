@@ -129,8 +129,8 @@
   z-index: -1;
 }
 
-.loader-wrapper.top-center {
-  align-items: flex-start;
+.loader-wrapper.bottom {
+  align-items: flex-end;
   padding-top: 0px;
   z-index: 9999;
 }

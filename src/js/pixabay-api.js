@@ -52,7 +52,7 @@ export async function loadMoreImages(searchQuery) {
 
   if (loader && loaderWrapper) {
     loader.style.display = 'inline-block';
-    loaderWrapper.classList.add('top-center');
+    loaderWrapper.classList.add('bottom');
   }
 
   document.querySelector('.load-more').style.display = 'none';
@@ -66,7 +66,7 @@ export async function loadMoreImages(searchQuery) {
   } finally {
     if (loader && loaderWrapper) {
       loader.style.display = 'none';
-      loaderWrapper.classList.remove('top-center');
+      loaderWrapper.classList.remove('bottom');
     }
     document.querySelector('.load-more').style.display = 'block';
     page += 1;
